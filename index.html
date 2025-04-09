@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Page with List, Image, Table & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+    }
+    form > div {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Sample Page</h1>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>Home</li>
+      <li>Features</li>
+      <li>Gallery</li>
+      <li>Contact</li>
+      <li>Feedback</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Pexel Image</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Sample Pexels Image" width="600">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Johnson</td>
+          <td>Lenana Street</td>
+          <td>123-456-7890</td>
+          <td>alice@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Bob Njoronge</td>
+          <td>Oak Avenue</td>
+          <td>+2547-567-8901</td>
+          <td>bob@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Carol Waithaka</td>
+          <td>Thika Road</td>
+          <td>+2547-678-9012</td>
+          <td>carol@gmail.com</td>
+        </tr>
+        <tr>
+          <td>David Kamau</td>
+          <td>Kimathi Lane</td>
+          <td>+254-789-0123</td>
+          <td>david@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Eve Martinez</td>
+          <td>Mutomo town</td>
+          <td>+254-890-1234</td>
+          <td>eve@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      
+      <!-- Name -->
+      <div>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="6">
+      </div>
+
+      <!-- Date -->
+      <div>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <!-- Dropdown -->
+      <div>
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+          <option value="">-- Select County --</option>
+          <option value="usa">Nairobi</option>
+          <option value="uk">Kiambu</option>
+          <option value="canada">Muranga</option>
+          <option value="australia">Nyeri</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div>
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <div>
+        <p>Hobbies:</p>
+        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+        <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit">Register</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sample Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
